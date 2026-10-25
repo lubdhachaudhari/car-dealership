@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us | Dealerships</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .about-page .team-photo {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+        .about-page .team-card {
+            border: 1px solid #dee2e6;
+            border-radius: .5rem;
+            overflow: hidden;
+        }
+        .about-page .team-card .title {
+            margin: 0 0 .75rem;
+        }
+        .about-page .team-email {
+            overflow-wrap: anywhere;
+        }
+    </style>
+</head>
+<body class="about-page">
+    <nav class="navbar navbar-expand-lg navbar-light"
+         style="background-color: darkturquoise; min-height: 1in;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><strong>Dealerships</strong></a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-5 fw-bold">Meet the Team</h1>
+            <p class="lead mx-auto" style="max-width: 760px;">
+                We make finding and comparing vehicles easier. Our illustrative
+                team is focused on clear guidance, helpful service, and a
+                straightforward dealership experience.
+            </p>
+            <p class="text-muted small">Team profiles and example.com email addresses are illustrative.</p>
+        </header>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card team-card h-100">
+                    <img class="team-photo"
+                         src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                         alt="Illustrative portrait of Alex Morgan">
+                    <div class="card-body text-center">
+                        <h2 class="h4 title">Alex Morgan</h2>
+                        <h3 class="h6 text-secondary">Sales Manager</h3>
+                        <p class="card-text">
+                            Alex helps customers compare vehicle options and
+                            find a practical fit for their needs and budget.
+                        </p>
+                        <a class="team-email" href="mailto:alex.morgan@example.com">alex.morgan@example.com</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card team-card h-100">
+                    <img class="team-photo"
+                         src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                         alt="Illustrative portrait of Jordan Lee">
+                    <div class="card-body text-center">
+                        <h2 class="h4 title">Jordan Lee</h2>
+                        <h3 class="h6 text-secondary">Customer Relations Specialist</h3>
+                        <p class="card-text">
+                            Jordan listens to customer questions and feedback,
+                            providing timely support throughout the process.
+                        </p>
+                        <a class="team-email" href="mailto:jordan.lee@example.com">jordan.lee@example.com</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card team-card h-100">
+                    <img class="team-photo"
+                         src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                         alt="Illustrative portrait of Taylor Brooks">
+                    <div class="card-body text-center">
+                        <h2 class="h4 title">Taylor Brooks</h2>
+                        <h3 class="h6 text-secondary">Vehicle Consultant</h3>
+                        <p class="card-text">
+                            Taylor explains vehicle features and specifications
+                            so customers can make informed comparisons.
+                        </p>
+                        <a class="team-email" href="mailto:taylor.brooks@example.com">taylor.brooks@example.com</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/bootstrap.bundle.min.js"></script>
+</body>
+</html>
